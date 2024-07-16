@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Wuthering Waves Survey</title>
+  </head>
+  <body>
+    <h1 id="title">Wuthering Waves Survey Form</h1>
+    <p id="description">Silahkan isi form dibawah ini, Terimakasih.</p>
+
+    <form id="survey-form">
+      <label id="name-label">
+        Nama :
+        <input type="text" id="name" required placeholder="Masukan Nama" autofocus />
+      </label>
+      <label id="email-label">
+        Email :
+        <input type="email" id="email" required placeholder="Masukan Email" />
+      </label>
+      <label id="number-label">
+        Umur :
+        <input type="number" id="number" required placeholder="Umur" min="17" max="50" />
+      </label>
+      <label>
+        Darimana kamu tahu wuthering waves?
+        <select id="dropdown">
+          <option>-- Pilihan --</option>
+          <option>Youtube</option>
+          <option>Facebook</option>
+          <option>Instagram</option>
+          <option>Lainnya</option>
+        </select>
+      </label>
+      <label class="lRadio"> Maukah Kamu merekomendasikan wuthering waves kepada temanmu? </label>
+      <label class="lRadio"><input type="radio" name="opsi" value="iya" checked /> Iya</label>
+      <label class="lRadio"><input type="radio" name="opsi" value="mungkin" /> Mungkin</label>
+      <label class="lRadio"><input type="radio" name="opsi" value="tidak" /> Tidak</label>
+      <label class="lCheck"> Siapakah Karakter favoritmu? </label>
+      <label class="lRadio"><input type="checkbox" value="changli" checked /> Changli</label>
+      <label class="lRadio"><input type="checkbox" value="baizhi" /> Baizhi</label>
+      <label class="lRadio"><input type="checkbox" value="jinshi" /> Jinshi</label>
+      <label class="lRadio"><input type="checkbox" value="jiyan" /> Jiyan</label>
+      <label class="lRadio"><input type="checkbox" value="yinlin" /> Yinlin</label>
+      <label class="lRadio"><input type="checkbox" value="zhezhi" /> Zhezhi</label>
+      <label class="lCheck">
+        Saran atau Keinginanmu di wuthering waves?
+        <textarea placeholder="Tulis saran disini"></textarea>
+      </label>
+      <button id="submit">Kirim</button>
+    </form>
+  </body>
+</html>

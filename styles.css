@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
+
+:root {
+  --white: #f9f7f7;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(165deg, rgba(7, 7, 8, 0.7) 0%, rgba(27, 34, 38, 0.7) 44%, rgba(168, 168, 168, 0.7) 100%),
+    url(https://images.squarespace-cdn.com/content/v1/5fe4caeadae61a2f19719512/6df9d253-9d9d-452e-ab41-267923365546/Wuthering+Waves+CBT2);
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: var(--white);
+  margin-bottom: 0;
+}
+
+h1,
+p {
+  text-align: center;
+}
+
+form {
+  max-width: 600px;
+  background: rgba(0, 0, 0, 0.7);
+  margin: 0 auto;
+  padding: 20px 40px;
+  border-radius: 5px 5px 0 0;
+}
+
+form > label {
+  display: block;
+  margin-bottom: 25px;
+}
+
+textarea:focus,
+input:focus:not(input[type="radio"], input[type="checkbox"]),
+select:focus {
+  outline: blue;
+  box-shadow: 0 0 3px var(--white);
+}
+
+form > label > input[type="text"],
+form > label > input[type="email"],
+form > label > input[type="number"],
+form > label > select,
+form > label > textarea {
+  display: block;
+  margin-top: 10px;
+  width: 100%;
+  height: 2rem;
+  border-radius: 5px;
+  padding: 10px;
+  border: none;
+  font-family: inherit;
+}
+
+.lRadio,
+.lRadio > * {
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+.lCheck {
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+form > label > select {
+  padding: 0 10px;
+}
+
+form > label > textarea {
+  height: 100px;
+}
+
+button {
+  width: 100%;
+  margin: 25px 0 40px;
+  padding: 0.8rem 0;
+  cursor: pointer;
+  background-color: #393e46;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  color: var(--white);
+  transition: all 0.5s;
+}
+
+button:hover {
+  border: 1px solid var(--white);
+  background-color: #222831;
+  box-shadow: 0 0 2px var(--white);
+  text-shadow: 0 0 5px var(--white);
+}
